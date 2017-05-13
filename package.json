@@ -1,0 +1,49 @@
+{
+  "name": "flow-safe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Joris Buchou",
+    "email": "joris.buchou@gmail.com",
+    "url": "https://github.com/joris974"
+  },
+  "keywords": [
+    "safe",
+    "type",
+    "array",
+    "empty",
+    "null",
+    "flow"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-flowtype": "^2.32.1",
+    "flow-bin": "^0.46.0",
+    "mocha": "^3.3.0"
+  },
+  "scripts": {
+    "test": "mocha --require babel-polyfill --compilers js:babel-register",
+    "compile": "babel src/ -d lib/",
+    "build": "npm run lint && npm run flow",
+    "prepublish": "npm run compile",
+    "flow": "flow",
+    "lint": "eslint src/ test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joris974/safe-js.git"
+  },
+  "homepage": "https://github.com/joris974/safe-js",
+  "bugs": {
+    "url": "https://github.com/joris974safe-js/issues"
+  }
+}
