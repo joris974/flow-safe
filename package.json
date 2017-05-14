@@ -32,7 +32,7 @@
   },
   "scripts": {
     "test": "mocha --require babel-polyfill --compilers js:babel-register",
-    "compile": "babel src/ -d lib/",
+    "compile": "babel src/index.js -d lib/",
     "build": "npm run lint && npm run flow",
     "prepublish": "npm run compile",
     "flow": "flow",
