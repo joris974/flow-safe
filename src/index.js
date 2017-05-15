@@ -14,12 +14,21 @@ import
   , findNote
   , findIndexMay
   , findIndexNote
+  , catMaybes
+  , mapMaybe
   } from './array.js'
 
-import { fromJustNote } from './maybe.js'
+import
+  { fromJustNote
+  , maybe
+  , fromMaybe
+  } from './maybe.js'
 
 export
   { fromJustNote
+  , maybe
+  , fromMaybe
+
   , tailMay
   , tailNote
   , tailSafe
@@ -33,4 +42,6 @@ export
   , findNote
   , findIndexMay
   , findIndexNote
+  , catMaybes
+  , mapMaybe
   }

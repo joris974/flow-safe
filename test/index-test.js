@@ -14,7 +14,12 @@ import
   , findNote
   , findIndexMay
   , findIndexNote
+  , catMaybes
+  , mapMaybe
+
   , fromJustNote
+  , maybe
+  , fromMaybe
 } from '../src/index.js'
 
 import {describe, it} from 'mocha'
@@ -35,6 +40,11 @@ describe("make sure all the function are exported", () => {
     assert.isFunction(findNote)
     assert.isFunction(findIndexMay)
     assert.isFunction(findIndexNote)
+    assert.isFunction(catMaybes)
+    assert.isFunction(mapMaybe)
+
     assert.isFunction(fromJustNote)
+    assert.isFunction(maybe)
+    assert.isFunction(fromMaybe)
   })
 })
